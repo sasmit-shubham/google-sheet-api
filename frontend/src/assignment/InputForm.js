@@ -15,6 +15,7 @@ const InputForm = ({columnName}) => {
     try{
         if(!rowValues) return;
         const {data} = await addRow({rowValues})
+        console.log(data)
     }catch{
         console.log("something went wrong in the addRow");
     }
